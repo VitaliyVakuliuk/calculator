@@ -1,0 +1,40 @@
+body {
+    font-size: 2em;
+    background: #B4ED50;
+    background: linear-gradient(135deg, #b4ed50 0%, #07f7bf 100%);
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+
+}
+.container {
+    display: inline-block;
+}
+#display, .button, .bigbutton, .zero, .del {
+    border-width: 2px;
+    border-color: #000;
+    border-style: solid;
+    background-color: #fff;
+    display: inline-block;
+    margin: 3px;
+    text-align: center;
+}
+.button:hover, .bigbutton:hover, .zero:hover, .del:hover {
+    color: #fff;
+    background-color: #000;
+}
+.button, .del {
+    width: 73px;
+}
+.bigbutton, .zero {
+    width: 164px;
+}
+#display {
+    width: 305px;
+    height: 20px;
+    padding: 20px;
+    text-align: right;
+    border-radius: 0;
+    font-size: 1em;
+}
