@@ -8,7 +8,10 @@ function digitOperPressed(e) {
 }
 document.querySelector('.bigbutton')
     .addEventListener('click', function(){
-        display.value = eval(display.value);       
+        display.value = eval(display.value);
+        if(display.value == Infinity){
+            display.value = "Can't divide by zero";
+        }  
 })
 document.querySelector('#clear')
 .addEventListener('click', function () {
